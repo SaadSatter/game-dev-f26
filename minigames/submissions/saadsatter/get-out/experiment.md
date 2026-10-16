@@ -2,10 +2,14 @@
 
 Principle: entry
 
-## Prediction (student writes before building)
+## Prediction and Description
 
-TODO: Describe one design change, the player behavior you predict, and what
-observation would make you question that prediction.
+I added an optional stopping-point preview so players can see where a slide will end before committing to a move. A dashed ring and text show the destination, and blocked directions are explained.
+
+I expect new players to use the preview to check their assumptions, then become better at predicting stopping points without it.
+
+If I observed players that rely on the rely on the preview instead of learning the movement rule then that would question the prediction.
+
 
 ## Implementation
 
@@ -19,27 +23,18 @@ undo, reset, completion and editing clear stale previews.
 
 Class `main` was fetched and verified during draft preparation; the branch
 had no unrelated commits or tracked differences from that base. Human playtest and learning-transfer evidence
-remain TODO. Student prediction and AI disclosure remain for the student to write.
 
 ## Playtest observations
 
-Student reported: “I did try it and play tested it, and it works.”
-No board, control method, completion, or learning details were supplied.
+One player play tested the feature and didn't realize the new feature was enabled or how to use it.
 
-TODO: Record anonymous player labels, board, version and order played, hints
-requested, restarts, completion, and one revealing action or remark. Separate
-observations from interpretations. No names, emails, or other personal data.
 
-## Interpretation and revision (student writes)
+## Interpretation and Next Step (student writes)
 
-TODO: Compare the evidence with the prediction. Mention prior familiarity,
-practice effects, sample size, or other limits. Describe the revision made or
-one next test. A single player's response supports a question, not a general claim.
+This is not what I predicted, because I assumed people would read the directions but old users wouldn't need this feature and wouldn't read the instructions since the game play is the same unless you click the arrow keys on the screen.
 
-## AI assistance and human decisions (student writes)
+My next step would be, change the core game mechanic to include this feature. So one arrow press on the keyboard will show the dotted lines and another would confirm for the first few levels.
 
-TODO: State what Codex generated, what you checked, and one design decision you
-retained or changed. Include any remaining known issues.
 
 ## Independent review
 
@@ -63,8 +58,3 @@ and README now clarify that keyboard arrows and swipes still move immediately.
   call was made. Separate authenticated GitHub identity lookup succeeded.
 - Browser UI check was attempted but blocked by the browser file-URL policy.
   No browser interaction or narrow-screen pass is claimed.
-
-TODO: Verify hover/focus preview, preview-mode commit, blocked directions,
-reset, undo, hints, completion, editor, and narrow-screen/touch controls in a
-browser, including the review fix. Human learning/experience observations
-remain unfinished. Student and instructor retain approval decisions.
